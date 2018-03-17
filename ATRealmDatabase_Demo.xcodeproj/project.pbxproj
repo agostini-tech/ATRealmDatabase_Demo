@@ -1,0 +1,615 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		77C319742055F022008735DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C319732055F022008735DB /* AppDelegate.swift */; };
+		77C319762055F022008735DB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C319752055F022008735DB /* ViewController.swift */; };
+		77C319792055F022008735DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77C319772055F022008735DB /* Main.storyboard */; };
+		77C3197B2055F022008735DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77C3197A2055F022008735DB /* Assets.xcassets */; };
+		77C3197E2055F022008735DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77C3197C2055F022008735DB /* LaunchScreen.storyboard */; };
+		77C319892055F023008735DB /* ATRealmDatabase_DemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C319882055F023008735DB /* ATRealmDatabase_DemoTests.swift */; };
+		77C319952055F4A3008735DB /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C319942055F4A3008735DB /* Movie.swift */; };
+		77C319972055F52E008735DB /* Actor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C319962055F52E008735DB /* Actor.swift */; };
+		77C319992055F5C2008735DB /* MoviesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C319982055F5C2008735DB /* MoviesController.swift */; };
+		A73249ADD51EC2858D132B4F /* Pods_ATRealmDatabase_Demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D245994ADFDB81D78FD0D918 /* Pods_ATRealmDatabase_Demo.framework */; };
+		B6E1B2F62C1CBD5D5DE3C6A1 /* Pods_ATRealmDatabase_DemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84A0198C97F812ED2F1BD83C /* Pods_ATRealmDatabase_DemoTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		77C319852055F023008735DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 77C319682055F022008735DB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 77C3196F2055F022008735DB;
+			remoteInfo = ATRealmDatabase_Demo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		245D02AE156CB281E314C013 /* Pods-ATRealmDatabase_DemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ATRealmDatabase_DemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ATRealmDatabase_DemoTests/Pods-ATRealmDatabase_DemoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5D5601119BC904CA118D9F19 /* Pods-ATRealmDatabase_Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ATRealmDatabase_Demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-ATRealmDatabase_Demo/Pods-ATRealmDatabase_Demo.release.xcconfig"; sourceTree = "<group>"; };
+		77C319702055F022008735DB /* ATRealmDatabase_Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ATRealmDatabase_Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		77C319732055F022008735DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		77C319752055F022008735DB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		77C319782055F022008735DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		77C3197A2055F022008735DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		77C3197D2055F022008735DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		77C3197F2055F022008735DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		77C319842055F023008735DB /* ATRealmDatabase_DemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ATRealmDatabase_DemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		77C319882055F023008735DB /* ATRealmDatabase_DemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATRealmDatabase_DemoTests.swift; sourceTree = "<group>"; };
+		77C3198A2055F023008735DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		77C319942055F4A3008735DB /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		77C319962055F52E008735DB /* Actor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Actor.swift; sourceTree = "<group>"; };
+		77C319982055F5C2008735DB /* MoviesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesController.swift; sourceTree = "<group>"; };
+		84A0198C97F812ED2F1BD83C /* Pods_ATRealmDatabase_DemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ATRealmDatabase_DemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3FB3BC7DE344DF148CD39D3 /* Pods-ATRealmDatabase_DemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ATRealmDatabase_DemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ATRealmDatabase_DemoTests/Pods-ATRealmDatabase_DemoTests.release.xcconfig"; sourceTree = "<group>"; };
+		AA031D8CE755E9AB7236A5FC /* Pods-ATRealmDatabase_Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ATRealmDatabase_Demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ATRealmDatabase_Demo/Pods-ATRealmDatabase_Demo.debug.xcconfig"; sourceTree = "<group>"; };
+		D245994ADFDB81D78FD0D918 /* Pods_ATRealmDatabase_Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ATRealmDatabase_Demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		77C3196D2055F022008735DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A73249ADD51EC2858D132B4F /* Pods_ATRealmDatabase_Demo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77C319812055F023008735DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6E1B2F62C1CBD5D5DE3C6A1 /* Pods_ATRealmDatabase_DemoTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		635FFE33EBAAC4EE3CF275E8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D245994ADFDB81D78FD0D918 /* Pods_ATRealmDatabase_Demo.framework */,
+				84A0198C97F812ED2F1BD83C /* Pods_ATRealmDatabase_DemoTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		77C319672055F022008735DB = {
+			isa = PBXGroup;
+			children = (
+				77C319722055F022008735DB /* ATRealmDatabase_Demo */,
+				77C319872055F023008735DB /* ATRealmDatabase_DemoTests */,
+				77C319712055F022008735DB /* Products */,
+				85D0F3B930C87EB9455E089B /* Pods */,
+				635FFE33EBAAC4EE3CF275E8 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		77C319712055F022008735DB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				77C319702055F022008735DB /* ATRealmDatabase_Demo.app */,
+				77C319842055F023008735DB /* ATRealmDatabase_DemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		77C319722055F022008735DB /* ATRealmDatabase_Demo */ = {
+			isa = PBXGroup;
+			children = (
+				77C319932055F469008735DB /* Data */,
+				77C319732055F022008735DB /* AppDelegate.swift */,
+				77C319752055F022008735DB /* ViewController.swift */,
+				77C319772055F022008735DB /* Main.storyboard */,
+				77C3197A2055F022008735DB /* Assets.xcassets */,
+				77C3197C2055F022008735DB /* LaunchScreen.storyboard */,
+				77C3197F2055F022008735DB /* Info.plist */,
+			);
+			path = ATRealmDatabase_Demo;
+			sourceTree = "<group>";
+		};
+		77C319872055F023008735DB /* ATRealmDatabase_DemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				77C319882055F023008735DB /* ATRealmDatabase_DemoTests.swift */,
+				77C3198A2055F023008735DB /* Info.plist */,
+			);
+			path = ATRealmDatabase_DemoTests;
+			sourceTree = "<group>";
+		};
+		77C319932055F469008735DB /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				77C319942055F4A3008735DB /* Movie.swift */,
+				77C319962055F52E008735DB /* Actor.swift */,
+				77C319982055F5C2008735DB /* MoviesController.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		85D0F3B930C87EB9455E089B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AA031D8CE755E9AB7236A5FC /* Pods-ATRealmDatabase_Demo.debug.xcconfig */,
+				5D5601119BC904CA118D9F19 /* Pods-ATRealmDatabase_Demo.release.xcconfig */,
+				245D02AE156CB281E314C013 /* Pods-ATRealmDatabase_DemoTests.debug.xcconfig */,
+				A3FB3BC7DE344DF148CD39D3 /* Pods-ATRealmDatabase_DemoTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		77C3196F2055F022008735DB /* ATRealmDatabase_Demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 77C3198D2055F023008735DB /* Build configuration list for PBXNativeTarget "ATRealmDatabase_Demo" */;
+			buildPhases = (
+				CCD756BA781043D44F10DD53 /* [CP] Check Pods Manifest.lock */,
+				77C3196C2055F022008735DB /* Sources */,
+				77C3196D2055F022008735DB /* Frameworks */,
+				77C3196E2055F022008735DB /* Resources */,
+				C36F5D5BF494569DEBF2649E /* [CP] Embed Pods Frameworks */,
+				EF2A0D6289EFEDFD882253BE /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ATRealmDatabase_Demo;
+			productName = ATRealmDatabase_Demo;
+			productReference = 77C319702055F022008735DB /* ATRealmDatabase_Demo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		77C319832055F023008735DB /* ATRealmDatabase_DemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 77C319902055F023008735DB /* Build configuration list for PBXNativeTarget "ATRealmDatabase_DemoTests" */;
+			buildPhases = (
+				5996660564D481D28F2ABEFE /* [CP] Check Pods Manifest.lock */,
+				77C319802055F023008735DB /* Sources */,
+				77C319812055F023008735DB /* Frameworks */,
+				77C319822055F023008735DB /* Resources */,
+				33F7CAAADDD5C7B41B059F93 /* [CP] Embed Pods Frameworks */,
+				3B8A8983AB4F3C9E7C393491 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				77C319862055F023008735DB /* PBXTargetDependency */,
+			);
+			name = ATRealmDatabase_DemoTests;
+			productName = ATRealmDatabase_DemoTests;
+			productReference = 77C319842055F023008735DB /* ATRealmDatabase_DemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		77C319682055F022008735DB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = Dejan;
+				TargetAttributes = {
+					77C3196F2055F022008735DB = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					77C319832055F023008735DB = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 77C3196F2055F022008735DB;
+					};
+				};
+			};
+			buildConfigurationList = 77C3196B2055F022008735DB /* Build configuration list for PBXProject "ATRealmDatabase_Demo" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 77C319672055F022008735DB;
+			productRefGroup = 77C319712055F022008735DB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				77C3196F2055F022008735DB /* ATRealmDatabase_Demo */,
+				77C319832055F023008735DB /* ATRealmDatabase_DemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		77C3196E2055F022008735DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77C3197E2055F022008735DB /* LaunchScreen.storyboard in Resources */,
+				77C3197B2055F022008735DB /* Assets.xcassets in Resources */,
+				77C319792055F022008735DB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77C319822055F023008735DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		33F7CAAADDD5C7B41B059F93 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ATRealmDatabase_DemoTests/Pods-ATRealmDatabase_DemoTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3B8A8983AB4F3C9E7C393491 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ATRealmDatabase_DemoTests/Pods-ATRealmDatabase_DemoTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5996660564D481D28F2ABEFE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ATRealmDatabase_DemoTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C36F5D5BF494569DEBF2649E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ATRealmDatabase_Demo/Pods-ATRealmDatabase_Demo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ATRealmDatabase_Demo/Pods-ATRealmDatabase_Demo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CCD756BA781043D44F10DD53 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ATRealmDatabase_Demo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EF2A0D6289EFEDFD882253BE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ATRealmDatabase_Demo/Pods-ATRealmDatabase_Demo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		77C3196C2055F022008735DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77C319992055F5C2008735DB /* MoviesController.swift in Sources */,
+				77C319762055F022008735DB /* ViewController.swift in Sources */,
+				77C319742055F022008735DB /* AppDelegate.swift in Sources */,
+				77C319952055F4A3008735DB /* Movie.swift in Sources */,
+				77C319972055F52E008735DB /* Actor.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77C319802055F023008735DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77C319892055F023008735DB /* ATRealmDatabase_DemoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		77C319862055F023008735DB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 77C3196F2055F022008735DB /* ATRealmDatabase_Demo */;
+			targetProxy = 77C319852055F023008735DB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		77C319772055F022008735DB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				77C319782055F022008735DB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		77C3197C2055F022008735DB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				77C3197D2055F022008735DB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		77C3198B2055F023008735DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		77C3198C2055F023008735DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		77C3198E2055F023008735DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA031D8CE755E9AB7236A5FC /* Pods-ATRealmDatabase_Demo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V7FR7N29C2;
+				INFOPLIST_FILE = ATRealmDatabase_Demo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "agostini.tech.ATRealmDatabase-Demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		77C3198F2055F023008735DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D5601119BC904CA118D9F19 /* Pods-ATRealmDatabase_Demo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V7FR7N29C2;
+				INFOPLIST_FILE = ATRealmDatabase_Demo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "agostini.tech.ATRealmDatabase-Demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		77C319912055F023008735DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 245D02AE156CB281E314C013 /* Pods-ATRealmDatabase_DemoTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V7FR7N29C2;
+				INFOPLIST_FILE = ATRealmDatabase_DemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "agostini.tech.ATRealmDatabase-DemoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ATRealmDatabase_Demo.app/ATRealmDatabase_Demo";
+			};
+			name = Debug;
+		};
+		77C319922055F023008735DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A3FB3BC7DE344DF148CD39D3 /* Pods-ATRealmDatabase_DemoTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V7FR7N29C2;
+				INFOPLIST_FILE = ATRealmDatabase_DemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "agostini.tech.ATRealmDatabase-DemoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ATRealmDatabase_Demo.app/ATRealmDatabase_Demo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		77C3196B2055F022008735DB /* Build configuration list for PBXProject "ATRealmDatabase_Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77C3198B2055F023008735DB /* Debug */,
+				77C3198C2055F023008735DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		77C3198D2055F023008735DB /* Build configuration list for PBXNativeTarget "ATRealmDatabase_Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77C3198E2055F023008735DB /* Debug */,
+				77C3198F2055F023008735DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		77C319902055F023008735DB /* Build configuration list for PBXNativeTarget "ATRealmDatabase_DemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77C319912055F023008735DB /* Debug */,
+				77C319922055F023008735DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 77C319682055F022008735DB /* Project object */;
+}
