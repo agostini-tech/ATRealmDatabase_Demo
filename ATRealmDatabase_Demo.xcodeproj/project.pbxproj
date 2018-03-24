@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		77A13D602066DB6400E785D0 /* Realm+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77A13D5F2066DB6400E785D0 /* Realm+Extensions.swift */; };
 		77C319742055F022008735DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C319732055F022008735DB /* AppDelegate.swift */; };
 		77C319762055F022008735DB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C319752055F022008735DB /* ViewController.swift */; };
 		77C319792055F022008735DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77C319772055F022008735DB /* Main.storyboard */; };
@@ -33,6 +34,7 @@
 /* Begin PBXFileReference section */
 		245D02AE156CB281E314C013 /* Pods-ATRealmDatabase_DemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ATRealmDatabase_DemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ATRealmDatabase_DemoTests/Pods-ATRealmDatabase_DemoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5D5601119BC904CA118D9F19 /* Pods-ATRealmDatabase_Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ATRealmDatabase_Demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-ATRealmDatabase_Demo/Pods-ATRealmDatabase_Demo.release.xcconfig"; sourceTree = "<group>"; };
+		77A13D5F2066DB6400E785D0 /* Realm+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Realm+Extensions.swift"; sourceTree = "<group>"; };
 		77C319702055F022008735DB /* ATRealmDatabase_Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ATRealmDatabase_Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77C319732055F022008735DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		77C319752055F022008735DB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -130,6 +132,7 @@
 				77C319942055F4A3008735DB /* Movie.swift */,
 				77C319962055F52E008735DB /* Actor.swift */,
 				77C319982055F5C2008735DB /* MoviesController.swift */,
+				77A13D5F2066DB6400E785D0 /* Realm+Extensions.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -363,6 +366,7 @@
 				77C319742055F022008735DB /* AppDelegate.swift in Sources */,
 				77C319952055F4A3008735DB /* Movie.swift in Sources */,
 				77C319972055F52E008735DB /* Actor.swift in Sources */,
+				77A13D602066DB6400E785D0 /* Realm+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

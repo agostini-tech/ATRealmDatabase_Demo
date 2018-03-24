@@ -19,11 +19,16 @@ class MoviesController
     
     public func startGenerating() {
         timer = Timer(timeInterval: 2, repeats: true) { (timer) in
-            let realm = try! Realm()
-            try! realm.write {
-                let movie = self.getRandomMovie()
-                realm.add(movie)
-            }
+            Realm.AT_remoteRealm(callback: { (remoteRealm, error) in
+                if let realm = remoteRealm {
+                    try! realm.write {
+                        let movie = self.getRandomMovie()
+                        realm.add(movie)
+                    }
+                } else {
+                    print("Error opening remote realm: \(error?.localizedDescription)")
+                }
+            })
         }
         
         if let aTimer = timer {
@@ -34,12 +39,17 @@ class MoviesController
     public func processInBackground(_ movie: Movie) {
         let movieRef = ThreadSafeReference(to: movie)
         DispatchQueue.global().async {
-            let realm = try! Realm()
-            if let movie = realm.resolve(movieRef) {
-                print("Processing movie with title: \(movie.title) in the background")
-            } else {
-                print("Movie cannot be resolved")
-            }
+            Realm.AT_remoteRealm(callback: { (remoteRealm, error) in
+                if let realm = remoteRealm {
+                    if let movie = realm.resolve(movieRef) {
+                        print("Processing movie with title: \(movie.title) in the background")
+                    } else {
+                        print("Movie cannot be resolved")
+                    }
+                } else {
+                    print("Error opening remote realm: \(error?.localizedDescription)")
+                }
+            })
         }
     }
     
